@@ -9,5 +9,6 @@
 #  updated_at :datetime         not null
 #
 
-class User < ApplicationRecord
+class UserSerializer < ActiveModel::Serializer
+  attributes :id, :name, :email
 end

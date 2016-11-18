@@ -60,6 +60,7 @@ group :test do
   gem 'shoulda-matchers'
   gem 'database_cleaner'
   gem 'simplecov', require: false
+  gem 'rails-controller-testing'
 end
 
 # Misc. Utilities

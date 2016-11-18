@@ -9,5 +9,9 @@
 #  updated_at :datetime         not null
 #
 
-class User < ApplicationRecord
+FactoryGirl.define do
+  factory :user do
+    name Faker::Name.full_name
+    email Faker::Internet.email
+  end
 end
